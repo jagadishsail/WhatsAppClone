@@ -1,8 +1,9 @@
 import {View, Image, Text, StyleSheet } from 'react-native';  
-const ChatListItem = () => {
+
+const ChatListItem = ({chat}) => {
     return (
         <View style={styles.container}>
-            <Image source={{uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg'}}
+            <Image source={{uri : chat.user.image}}
                     style={styles.image}
             />
             <View style={styles.content}>
