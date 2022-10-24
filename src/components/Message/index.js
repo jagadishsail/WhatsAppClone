@@ -22,12 +22,21 @@ const Message = ({message}) => {
 
 const styles= StyleSheet.create({
     container:{
-        backgroundColor:'white',
-        alignSelf:'flex-start',
         margin:5,
         padding:10,
         borderRadius:10,
-        width: '80%'
+        maxWidth: '80%',
+
+        //Shadows
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.18,
+        shadowRadius: 1.00,
+
+        elevation: 3,
     },
     time:{
         color: 'gray',
