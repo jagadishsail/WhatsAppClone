@@ -1,4 +1,4 @@
-import { View, StyleSheet , TextInput } from 'react-native'
+import { SafeAreaView, StyleSheet , TextInput } from 'react-native'
 import React from 'react'
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -11,7 +11,7 @@ const InputBox = () => {
   }
 
   return (
-    <View style={styles.container}> 
+    <SafeAreaView edges={["bottom"]} style={styles.container}>
        {/* Icon */}
       <AntDesign name="plus" size={20} color="royalblue"/>
       {/* Text Input */}
@@ -22,7 +22,7 @@ const InputBox = () => {
       />
        {/* Send button */}
       <MaterialIcons onPress={onSend} style={styles.send} name="send" size={16} color="white"/>
-    </View>
+    </SafeAreaView>
   )
 }
 
